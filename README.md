@@ -45,7 +45,7 @@ This tool allows you to create custom desktop apps from web URLs, complete with 
 
 ### Common Issues
 
-**"URL validation failed"**
+**URL validation failed**
 - Check internet connection
 - Ensure URL is accessible
 - Try with http:// or https:// prefix
@@ -61,6 +61,6 @@ This tool allows you to create custom desktop apps from web URLs, complete with 
 - Keep file size under 10MB
 - Try different image if processing fails
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
