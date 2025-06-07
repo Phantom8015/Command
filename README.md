@@ -6,7 +6,7 @@ This tool allows you to create custom desktop apps from web URLs, complete with 
 1. **Enter a URL**: Provide the web address you want to convert into an app.
 2. **Customize Options**: Choose whether to use the website title as the app name and upload a custom icon if desired.
 3. **Generate App**: Click the big blue button to create your desktop application.
-4. **Download**: Once the app is built, you can use it like any other macOS application.
+4. **Use**: Once the app is built, you can use it like any other macOS application.
 
 ### Options
 
@@ -21,7 +21,7 @@ This tool allows you to create custom desktop apps from web URLs, complete with 
 - Icons are automatically resized to 512x512 pixels
 - Maximum file size: 10MB
 
-## 📋 Requirements
+## Requirements
 
 ### System Requirements
 - **macOS** Sequoia (not tested on earlier versions)
@@ -29,16 +29,14 @@ This tool allows you to create custom desktop apps from web URLs, complete with 
 - At least 1GB free disk space
 - Electron Builder installed globally (`npm install -g electron-builder`)
 
-### Generated App Requirements
-- **macOS** 10.13 or later
-- Internet connection (for web content)
+# DISCLAIMER: Each generated app requires an internet connection to function. The developer is not responsible for any issues arising from the use of generated applications.
 
-## 🚀 Getting Started
+## Getting Started
 ### Installation
 1. Download the latest release from the [Releases](https://github.com/evanchowdhry/command/releases) page.
 2. Done.
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -47,12 +45,13 @@ This tool allows you to create custom desktop apps from web URLs, complete with 
 - Ensure URL is accessible
 - Try with http:// or https:// prefix
 
-**"App build failed"**
+**App build failed**
 - Verify Node.js installation
 - Check available disk space
 - Ensure no antivirus interference
+- Create an issue on GitHub with error logs
 
-**"Custom icon not working"**
+**Custom icon not working**
 - Use supported formats: PNG, JPG, WebP, TIFF, GIF
 - Keep file size under 10MB
 - Try different image if processing fails
