@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Command</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-wrapper">
+        <div class="header">
+          <div class="header-top">
+            <h1>⌘</h1>
+            <div class="node-status-container">
+              <div class="node-status-pill" id="node-status-pill">
+                <div class="status-indicator" id="status-indicator"></div>
+                <span class="status-text" id="status-text">Checking...</span>
+              </div>
+              <button
+                id="install-node-btn"
+                class="install-node-button"
+                style="display: none"
+              >
+                Install Node.js
+              </button>
+            </div>
+          </div>
+          <p>Convert any website into a desktop app</p>
+        </div>
+
+        <div class="form-container">
+          <div class="input-group">
+            <label for="url-input">Website URL</label>
+            <input
+              type="url"
+              id="url-input"
+              placeholder="https://example.com"
+              required
+            />
+            <div class="url-status" id="url-status"></div>
+          </div>
+
+          <div class="input-group">
+            <div class="checkbox-container">
+              <input type="checkbox" id="auto-name" checked />
+              <label for="auto-name">Use website title as app name</label>
+            </div>
+          </div>
+
+          <div class="input-group" id="custom-name-group" style="display: none">
+            <label for="app-name">Custom App Name</label>
+            <input type="text" id="app-name" placeholder="My Awesome App" />
+          </div>
+
+          <div class="input-group">
+            <div class="checkbox-container">
+              <input type="checkbox" id="auto-icon" checked />
+              <label for="auto-icon">Use default icon</label>
+            </div>
+          </div>
+
+          <div class="input-group" id="custom-icon-group" style="display: none">
+            <label for="icon-upload">Custom App Icon</label>
+            <input
+              type="file"
+              id="icon-upload"
+              accept=".png,.jpg,.jpeg,.ico"
+              placeholder="Choose icon file"
+            />
+            <small>Required: 512x512 PNG</small>
+          </div>
+
+          <div class="button-group">
+            <button id="convert-btn" class="primary-button" disabled>
+              <span class="button-text">Convert & Build for macOS</span>
+              <div class="spinner" style="display: none"></div>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="progress-container"
+          id="progress-container"
+          style="display: none"
+        >
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <div class="progress-text" id="progress-text">Processing...</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
