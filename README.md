@@ -1,6 +1,10 @@
-# ⌘ Command - Web to Desktop App Converter
-Convert your favorite websites into standalone desktop applications for macOS with ease!
-This tool allows you to create custom desktop apps from web URLs, complete with personalized names and icons.
+<p align="center">
+<img src="https://raw.githubusercontent.com/Phantom8015/Command/refs/heads/main/src/icon.png" width="150" height="150"/>
+</p>
+<h1 align="center">Command</h1>
+<p align="center">Convert your favorite websites into standalone desktop applications for macOS with ease!
+This tool allows you to create custom desktop apps from web URLs, complete with personalized names and icons.</p>
+
 
 ## How It Works
 1. **Enter a URL**: Provide the web address you want to convert into an app.
@@ -17,14 +21,13 @@ This tool allows you to create custom desktop apps from web URLs, complete with 
 
 #### Custom Icons
 - Uncheck "Use default icon"
-- Upload PNG, JPG, WebP, TIFF, or GIF files
-- Icons are automatically resized to 512x512 pixels
-- Maximum file size: 10MB
+- Upload an icon by clicking on the choose file button
 
 ## Requirements
 
 ### System Requirements
 - **macOS** Sequoia (not tested on earlier versions)
+- Any M series mac (only tested on arm64)
 - **Node.js + npm** Download and install from [Node.js](https://nodejs.org/)
 - At least 1GB free disk space
 - Electron Builder installed globally (`npm install -g electron-builder`)
@@ -55,11 +58,6 @@ This tool allows you to create custom desktop apps from web URLs, complete with 
 - Check available disk space
 - Ensure no antivirus interference
 - Create an issue on GitHub with error logs
-
-**Custom icon not working**
-- Use supported formats: PNG, JPG, WebP, TIFF, GIF
-- Keep file size under 10MB
-- Try different image if processing fails
 
 ## License
 
