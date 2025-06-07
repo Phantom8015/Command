@@ -34,7 +34,12 @@ This tool allows you to create custom desktop apps from web URLs, complete with 
 ## Getting Started
 ### Installation
 1. Download the latest release from the [Releases](https://github.com/evanchowdhry/command/releases) page.
-2. Done.
+2. Download and install [Node.js](https://nodejs.org/) and ensure `npm` is available in your terminal.
+3. Open your terminal and run:
+   ```bash
+   npm install -g electron-builder
+   ```
+4. Done.
 
 ## Troubleshooting
 
